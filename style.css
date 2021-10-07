@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Temporary Styles */
+
+* {
+    padding: 0.5rem;
+    border: 2px solid rgb(200,200,200);
+}
+html, 
+body {
+    border: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    border: 2px solid rgb(170, 80,80);
+}
+
+.bg-image {
+    background-color: rgb(109, 250, 250);
+}
+
+/*  End Temporary Styles */
