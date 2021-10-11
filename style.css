@@ -1,3 +1,13 @@
+/*  colors: 
+    #fae0a8 light yellow    
+    #122143 dark blue
+
+    Fonts:
+    font-family: 'Inconsolata', monospace;
+    300;400;600
+*/
+
+
 * {
     padding: 0;
     margin: 0;
@@ -24,3 +34,29 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /*  End Temporary Styles */
+
+body {
+    font-family: 'Inconsolata', monospace;
+}
+
+
+/*  Utility Classes */
+
+.padded { padding: 5%; }
+.padded-05 { padding: 0.5rem; }
+.padded-1 { padding: 1rem; }
+.padded-2 { padding: 2rem; }
+
+.right {  text-align: right; }
+.center {  text-align: center; }
+.left {  text-align: left; }
+
+
+/*  Typography Styles */
+
+.uppercase {
+    text-transform: uppercase; 
+}
+
+.light-font { font-weight: 300;}
+.bold-font  { font-weight: 600; }
