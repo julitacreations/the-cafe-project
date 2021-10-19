@@ -1,5 +1,5 @@
 /*  colors: 
-    #fae0a8 light yellow    
+    #F4DB97 light yellow    
     #122143 dark blue
 
     Fonts:
@@ -23,17 +23,10 @@
 /* Temporary Styles ---------- */
 
 * {
-    padding: 0.5rem;
-    border: 2px solid rgb(200,200,200);
-}
-html, 
-body {
-    border: none;
+    /*padding: 0.5rem;
+    border: 2px solid rgb(200,200,200);*/
 }
 
-h1,h2,h3,h4,h5,h6 {
-    border: 2px solid rgb(170, 80,80);
-}
 
 
 /*  End Temporary Styles -------- */
@@ -114,14 +107,14 @@ h1,h2,h3,h4,h5,h6 {
 
 /* --------------- Background & Images ------------------------------------- */
 
-.bg-light { background-color: #fae0a8; }
+.bg-light { background-color: #F4DB97 }
 .bg-dark  { background-color: #122143; }
 
 
 /* Image styles ----*/
 
 .bg-image {
-    background-color: #fae0a8;
+    background-color: #F4DB97;
     background-image: url(/images/the-cafe-project-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -131,10 +124,10 @@ h1,h2,h3,h4,h5,h6 {
 
 /* Aspect Ratios with percentage unit are only effective if the element (the <div>) is inside a parent container or column, it can't be applied to the column itself. */
 
-/* 
+
 .landscape { padding-bottom: 65%; }
 .portrait { padding-bottom: 125%; }
-.square { padding-bottom: 100%; } */
+.square { padding-bottom: 100%; }
 
 
 /* Background Position ----*/
@@ -153,10 +146,48 @@ body {
 }
 
 h2,h3,h4,h5,h6 {
-    margin-bottom: 1rem;
+    margin-bottom: 1.1rem;
     line-height: 1.1
 }
 
+h2 {
+    font-size: 2.4rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+p:last-child {
+    margin-bottom: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+.about-intro {
+    line-height: 1.5;
+}
+
+.button {
+    text-decoration: none;
+    border: 2px solid #122143;
+    border-radius: 0.5rem;
+    color: inherit;
+    letter-spacing: 0.1em;
+    padding: 0.5rem 1rem;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #122143;
+    color: #F4DB97;
+}
 
 
 .text-right  {  text-align: right;  }
@@ -167,13 +198,14 @@ h2,h3,h4,h5,h6 {
 .weight-normal    { font-weight: normal; }
 .weight-bold      { font-weight: 600; }
 
-.uppercase  { text-transform: uppercase; }
+.italic  { font-style: italic;}
+
 
 
 /* --------------- Header & Footer Styles------------------------------------- */
 
 header {
-    padding: 0.8% 4%;
+    padding: 2%;
 }
 
 header a {
@@ -181,41 +213,89 @@ header a {
     display: inline-block;
     border: none;
     color: inherit;
+    padding: 0.5rem;
 }
-
 
 
 .logo {
     text-transform: uppercase;
+    font-size: 3rem;
+}
+
+footer {
+    padding: 2%;
+    background-color: #F4DB97;
+}
+
+h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 0.3rem 0;
+    margin: 0.1rem;
+    font-size: 1rem;
+}
+
+.social-links a {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 1.2rem 0rem;
+    margin: 0.2rem;
 }
 
 
 /* --------------- Background Images------------------------------------------ */
 
-
+.bg-image-bar {
+    background-image: url(/images/the-cafe-project-2.jpg);
+}
+.bg-image-table {
+    background-image: url(/images/the-cafe-project-3.jpg);
+}
+.bg-image-coffee-menu {
+    background-image: url(/images/the-cafe-project4.jpg);
+}
+.bg-image-guests {
+    background-image: url(/images/the-cafe-project5.jpg);
+}
+.bg-image-menu-flatlay {
+    background-image: url(/images/the-cafe-project-6.jpg);
+}
+.bg-image-food-item {
+    background-image: url(/images/the-cafe-project-7.jpg);
+}
 
 /* ---------------Contact Form & Button Styles ------------------------------ */
 
 .main-menu-button {
     text-decoration: none;
     font-size: 2rem;
-    border: 2px solid #fae0a8;
+    border: 2px solid #122143;
     border-radius: 0.5rem;
     color: inherit;
-    background-color: #fae0a8;
+    background-color: #F4DB97;
     letter-spacing: 0.2em;
     padding: 0.5rem 5rem;
     transition: 0.3s;
-    
 }
 
 .main-menu-button:hover {
-    border: 2px solid #122143;
+    border: 2px solid #F4DB97;
     background-color: #122143;
-    color: #fae0a8;
+    color: #F4DB97;
 }
 
 
+/* ---------------Card Styles ------------------------------------------- */
+
+.card {
+    border: 2rem solid white;
+  }
 
 
 /* ---------------Testimonial Block ----------------------------------------- */

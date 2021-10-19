@@ -26,13 +26,13 @@
     <body>
 
         <!--- Header LOGO --->
-        <header class="grid">
+        <header class="grid padded-2">
             <div class="col-4-middle">
-                <a href="#">
+                <a href="/index.html">
                     <h1 class="logo"> The Cafe Project </h1>
                 </a>
             </div>
-            <nav class="col-8-middle text-right">
+            <nav class="col-8-middle text-right padded-05">
                 <a href="/index.html"> Home </a>
                 <a href="/menu.html"> Menu </a>
                 <a href="/about.html"> About </a>
@@ -48,11 +48,10 @@
         </section>
 
          <!--- Opening times section --->
-        <section class="grid">
-            <div class="col-7 bg-image">
-
+        <section class="grid padded-1">
+            <div class="col-7 bg-image bg-image-bar tall-50">
             </div>
-            <div class="col-5 text-center">
+            <div class="col-5 text-center padded">
                 <h2> Opening Times </h2>
                 <p> TUE - FRI 6.30am - 4.00pm </p>
                 <p> SAT + SUN 8.00am - 3.00pm </p>
@@ -61,42 +60,44 @@
         </section>
 
         <!--- About intro / Link to About --->
-        <section class="text-center"> 
-            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur non voluptatibus saepe, est voluptatem a. Harum, molestiae sunt eos suscipit consequuntur quis, impedit nam voluptatum odio ab quisquam velit cupiditate? </p>
+        <section class="text-center padded bg-light"> 
+            <p class="about-intro"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur non voluptatibus saepe, est voluptatem a. Harum, molestiae sunt eos suscipit consequuntur quis, impedit nam voluptatum odio ab quisquam velit cupiditate? </p>
             <div>
-                <a href="#"> About </a>
+                <a href="#" class="button"> About </a>
             </div>
         </section>
 
         <!--- Cards linking to different pages --->
 
-        <section class="grid text-center">
+        <section class="grid-middle text-center padded-2">
             <!-- Card 1 -->
-            <div class="col-3">
+            <div class="col-3 padded-05">
                 <div>
-                    <div class="bg-image"></div>
-                    <a href="#"> Contact </a>
+                    <div class="bg-image portrait bg-image-table card"></div>
+                    <a href="#" class="button"> Contact </a>
                 </div>
             </div>
+
             <!-- Card 2 -->
-            <div class="col-3">
+            <div class="col-3 padded-05">
                 <div>
-                    <div class="bg-image"></div>
-                    <a href="#"> Menu </a>
+                    <div class="bg-image portrait bg-image-coffee-menu card"></div>
+                    <a href="#" class="button"> Menu </a>
                 </div>
             </div>
+
             <!-- Card 3 -->
-            <div class="col-3">
+            <div class="col-3 padded-05">
                 <div>
-                    <div class="bg-image"></div>
-                    <a href="#"> Socials </a>
+                    <div class="bg-image portrait bg-image-guests card"></div>
+                    <a href="#" class="button"> Socials </a>
                 </div>
             </div>
         </section>
 
         <!--- Footer details --->
-        <footer>
-            <div class="logo"> 
+        <footer class="grid-spaceAround">
+            <div class="logo col-5-middle padded-2"> 
                 <h2> The Cafe Project </h2>
             </div>
             <nav class="col-2"> 
@@ -104,22 +105,25 @@
                    <a href="#"> Lorem Ipsum </a>
                    <a href="#"> Commodi dolor </a>
                    <a href="#"> Lorem Ipsum </a>
-              </nav>
-              <nav class="col-2"> 
-                <h4> Connect </h4>
+            </nav>
+            <nav class="col-2"> 
+                <h4> Contact </h4>
                    <a href="#"> Lorem Ipsum </a>
                    <a href="#"> Commodi dolor </a>
-
-                    <!-- Social links -->
-                   <nav class="social-links"> 
-                        <a href="#"> 
-                            <i class="fab fa-facebook"></i>         
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-instagram-square"></i>
-                        </a>
-                    </nav>
-              </nav>
+                   <a href="#"> Lorem Elit </a>
+            </nav>
+            <!-- Social links -->
+            <div class="col-2 social-links">
+                <h4> Connect </h4>
+                <nav> 
+                    <a href="#"> 
+                        <i class="fab fa-facebook"></i>         
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+                </nav>
+            </div>
         </footer>
 
     </body>
