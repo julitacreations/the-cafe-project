@@ -308,6 +308,12 @@ footer a {
 .bg-image-garden {
     background-image: url(/images/the-cafe-project-11.jpg);
 }
+.bg-map {
+    background-image: url(/images/the-cafe-project-map.png);
+}
+.bg-cafe {
+    background-image: url(/images/the-cafe-project-12.jpg);
+}
 
 /* ---------------Contact Form & Button Styles ------------------------------ */
 
@@ -329,6 +335,34 @@ footer a {
     color: #F4DB97;
 }
 
+form input, 
+form textarea {
+    width: 100%;
+    display: block;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    font-family: inherit;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    border: 2px solid white;
+    outline: none;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #122143;
+}
+
+form button {
+    text-decoration: none;
+    border: 2px solid #122143;
+    color: #F4DB97;
+    background-color: #122143;
+    letter-spacing: 0.1em;
+    padding: 0.5rem 2rem;
+    appearance: none;
+}
 
 /* ---------------Card Styles ------------------------------------------- */
 
