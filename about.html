@@ -5,13 +5,18 @@
     <head>
 
         <!-- This title shows up in the browser tab /SEO -->
-        <title> About The Cafe Project </title>
+        <title> The Cafe Project </title>
 
         <!--- Gridlex for flexbox girds --->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
 
         <!--- Social Icon Links --->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!--- Google Fonts --->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;600&display=swap" rel="stylesheet"> 
 
         <!--- This is our custom CSS stylesheet -This always goes last --->
         <link rel="stylesheet" href="/style.css">
@@ -21,13 +26,13 @@
     <body>
 
           <!--- Header LOGO --->
-          <header class="grid">
-            <div class="col-4">
+        <header class="grid padded-2">
+            <div class="col-4-middle">
                 <a href="/index.html">
-                    <h1 class="logo"> The Cafe Project </h1>
+                    <h1 class="logo"> The Café Project </h1>
                 </a>
             </div>
-            <nav class="col-8">
+            <nav class="col-8-middle text-right padded-05">
                 <a href="/index.html"> Home </a>
                 <a href="/menu.html"> Menu </a>
                 <a href="/about.html"> About </a>
@@ -36,56 +41,62 @@
         </header>
 
         <!--- About Section --->
-        <section class="grid">
-            <div class="bg-image col-6">
+        <div class="text-center featured-text bg-dark text-light padded">
+            <h2> Our Story </h2>
+        </div>
+        <section class="grid padded-2">
+            <div class="bg-image bg-image-high-table col-6 tall-70">
             </div>
-            <div class="col-6">
-                <h3> Lorem Ipsum </h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium aperiam soluta excepturi, nesciunt error recusandae consequuntur, sapiente quas a, cum non aliquam facilis in minima magni voluptatibus beatae doloribus!</p>
-            </div>
-
-            <div class="col-6">
-                <h3> Lorem Ipsum </h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium aperiam soluta excepturi, nesciunt error recusandae consequuntur, sapiente quas a, cum non aliquam facilis in minima magni voluptatibus beatae doloribus!</p>
-            </div>
-            <div class="bg-image col-6">
+            <div class="col-6 padded">
+                <h3> Where it began </h3>
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum perspiciatis reprehenderit sit soluta aut ullam laboriosam laudantium, pariatur, cupiditate quasi officiis! Incidunt sapiente voluptate excepturi a eaque, nihil et! Non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium aperiam soluta excepturi, nesciunt error recusandae consequuntur, sapiente quas a, cum non aliquam facilis in minima magni voluptatibus beatae doloribus!</p>
             </div>
 
-            <div class="bg-image col-6">
+            <div class="col-6 padded">
+                <h3> Our Values </h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium aperiam soluta excepturi, nesciunt error recusandae consequuntur, sapiente quas a, cum non aliquam facilis in minima magni voluptatibus beatae doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea reiciendis soluta saepe dolor maxime numquam corporis voluptatibus quasi debitis quae qui, atque cumque minima non quos culpa quibusdam doloribus dicta!</p>
             </div>
-            <div class="col-6">
-                <h3> Lorem Ipsum </h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium aperiam soluta excepturi, nesciunt error recusandae consequuntur, sapiente quas a, cum non aliquam facilis in minima magni voluptatibus beatae doloribus!</p>
+            <div class="bg-image bg-image-coffee-machine col-6 tall-70">
+            </div>
+
+            <div class="bg-image bg-image-garden col-6 tall-70">
+            </div>
+            <div class="col-6 padded">
+                <h3> Our Impact </h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iusto sapiente ipsam itaque officia quod neque corporis obcaecati, labore est! Vel quos perferendis dolorum quae harum nostrum laboriosam inventore nobis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium aperiam soluta excepturi, nesciunt error recusandae consequuntur, sapiente quas a, cum non aliquam facilis in minima magni voluptatibus beatae doloribus!</p>
             </div>
 
         </section>
 
-        <!--- Footer details --->
-        <footer>
-            <div class="logo"> 
-                <h2> The Cafe Project </h2>
+         <!--- Footer details --->
+         <footer class="grid-spaceAround">
+            <div class="logo col-6-middle padded-2"> 
+                <h2> The Café Project </h2>
             </div>
             <nav class="col-2"> 
-                <h4> The Cafe Project </h4>
-                <a href="#"> Lorem Ipsum </a>
-                <a href="#"> Commodi dolor </a>
-                <a href="#"> Lorem Ipsum </a>
+                <h4> The Café Project </h4>
+                   <a href="#"> Lorem Ipsum </a>
+                   <a href="#"> Commodi dolor </a>
+                   <a href="#"> Lorem Ipsum </a>
             </nav>
             <nav class="col-2"> 
-                <h4> Connect </h4>
-                <a href="#"> Lorem Ipsum </a>
-                <a href="#"> Commodi dolor </a>
-
-                    <!-- Social links -->
-                <nav class="social-links"> 
-                        <a href="#"> 
-                            <i class="fab fa-facebook"></i>         
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-instagram-square"></i>
-                        </a>
-                    </nav>
+                <h4> Contact </h4>
+                   <a href="#"> Lorem Ipsum </a>
+                   <a href="#"> Commodi dolor </a>
+                   <a href="#"> Lorem Elit </a>
             </nav>
+            <!-- Social links -->
+            <div class="col-2 social-links">
+                <h4> Socials </h4>
+                <nav> 
+                    <a href="#"> 
+                        <i class="fab fa-facebook"></i>         
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+                </nav>
+            </div>
         </footer>
             
 

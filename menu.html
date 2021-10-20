@@ -5,7 +5,7 @@
     <head>
 
         <!-- This title shows up in the browser tab /SEO -->
-        <title> The Cafe Project Menu </title>
+        <title> The Cafe Project </title>
 
         <!--- Gridlex for flexbox girds --->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
@@ -13,21 +13,25 @@
         <!--- Social Icon Links --->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+        <!--- Google Fonts --->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;600&display=swap" rel="stylesheet"> 
+
         <!--- This is our custom CSS stylesheet -This always goes last --->
         <link rel="stylesheet" href="/style.css">
-
     </head>
 
     <body>
 
           <!--- Header LOGO --->
-          <header class="grid">
-            <div class="col-4">
+        <header class="grid padded-2">
+            <div class="col-4-middle">
                 <a href="/index.html">
-                    <h1 class="logo"> The Cafe Project </h1>
+                    <h1 class="logo"> The Café Project </h1>
                 </a>
             </div>
-            <nav class="col-8">
+            <nav class="col-8-middle text-right padded-05">
                 <a href="/index.html"> Home </a>
                 <a href="/menu.html"> Menu </a>
                 <a href="/about.html"> About </a>
@@ -35,81 +39,88 @@
             </nav>
         </header>
 
+
         <!--- About Banner --->
-        <section class="bg-image">
-            <div>
-                <h2> Menu </h2>
+
+        <section class="bg-image bg-image-menu-flatlay tall-70">
+            <div class="uppercase text-center padded-t-8">
+                <h2 class="featured-text"> Menu </h2>
             </div>
         </section>
 
 
-        <section>
-            <h2> The Menu </h2>
-            <nav>
-                <a href ="#"> Food </a>
-                <a href ="#"> Dessert </a>
-                <a href ="#"> Drinks </a>
+        <!--- Menu Section --->
+
+        <section class="text-center padded">
+            <h2 class="featured-text"> Our Menu </h2>
+            <nav class="padded-b-2">
+                <a href ="#" class="button"> Food </a>
+                <a href ="#" class="button"> Dessert </a>
+                <a href ="#" class="button"> Drinks </a>
             </nav>
-            <div class="gallery grid-spaceAround">
+            <div class="gallery grid-spaceBetween">
                 <div class="col-4">
-                    <div class="bg-image square"> </div>
+                    <div class="bg-image bg-image-food-item square"> </div>
                 </div>
                 <div class="col-4">
-                    <div class="bg-image square"> </div>
+                    <div class="bg-image bg-image-pancake bg-pos-l square"> </div>
                 </div>
                 <div class="col-4">
-                    <div class="bg-image square"> </div>
+                    <div class="bg-image bg-image-bowl square"> </div>
                 </div>
                 <div class="col-4">
-                    <div class="bg-image square"> </div>
+                    <div class="bg-image bg-image-drink square"> </div>
                 </div>
                 <div class="col-4">
-                    <div class="bg-image square"> </div>
+                    <div class="bg-image bg-image-bowl bg-pos-l square"> </div>
                 </div>
                 <div class="col-4">
-                    <div class="bg-image square"> </div>
+                    <div class="bg-image bg-image-menu-flatlay square"> </div>
                 </div>
                 <div class="col-4">
-                    <div class="bg-image square"> </div>
+                    <div class="bg-image bg-image-pancake square"> </div>
                 </div>
                 <div class="col-4">
-                    <div class="bg-image square"> </div>
+                    <div class="bg-image bg-image-food-item square"> </div>
                 </div>
                 <div class="col-4">
-                    <div class="bg-image square"> </div>
+                    <div class="bg-image bg-image-drink bg-pos-l square"> </div>
                 </div>
             </div>
             <div>
-                <a href ="#"> Full Menu </a>
+                <a href ="#" class="button"> Full Menu </a>
             </div>
         </section>
 
-        <!--- Footer details --->
-        <footer>
-            <div class="logo"> 
-                <h2> The Cafe Project </h2>
+         <!--- Footer details --->
+         <footer class="grid-spaceAround">
+            <div class="logo col-6-middle padded-2"> 
+                <h2> The Café Project </h2>
             </div>
             <nav class="col-2"> 
-                <h4> The Cafe Project </h4>
+                <h4> The Café Project </h4>
                    <a href="#"> Lorem Ipsum </a>
                    <a href="#"> Commodi dolor </a>
                    <a href="#"> Lorem Ipsum </a>
-              </nav>
-              <nav class="col-2"> 
-                <h4> Connect </h4>
+            </nav>
+            <nav class="col-2"> 
+                <h4> Contact </h4>
                    <a href="#"> Lorem Ipsum </a>
                    <a href="#"> Commodi dolor </a>
-
-                    <!-- Social links -->
-                   <nav class="social-links"> 
-                        <a href="#"> 
-                            <i class="fab fa-facebook"></i>         
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-instagram-square"></i>
-                        </a>
-                    </nav>
-              </nav>
+                   <a href="#"> Lorem Elit </a>
+            </nav>
+            <!-- Social links -->
+            <div class="col-2 social-links">
+                <h4> Socials </h4>
+                <nav> 
+                    <a href="#"> 
+                        <i class="fab fa-facebook"></i>         
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+                </nav>
+            </div>
         </footer>
 
     </body>

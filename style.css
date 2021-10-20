@@ -132,10 +132,15 @@
 
 /* Background Position ----*/
 
-.bg-pos-t { background-position: top; }
-.bg-pos-b { background-position: bottom; }
-.bg-pos-l { background-position: left; }
-.bg-pos-r { background-position: right; }
+.gallery [class*="col-"] {
+    padding: 3%;
+  }
+
+.bg-pos-t       { background-position: top; }
+.bg-pos-b       { background-position: bottom; }
+.bg-pos-l       { background-position: left; }
+.bg-pos-r       { background-position: right; }
+.bg-pos-unique  { background-position: 50% 50%; }
 
 
 /* -------------------------- Typography Styles ---------------------------------------- */
@@ -150,14 +155,14 @@ h2,h3,h4,h5,h6 {
     line-height: 1.1
 }
 
-h2 {
+h2, h3 {
     font-size: 2.4rem;
 }
 
 p {
     font-size: 1.2rem;
     margin-bottom: 1rem;
-    line-height: 1.1;
+    line-height: 1.4;
 }
 p:last-child {
     margin-bottom: 0;
@@ -199,6 +204,16 @@ a {
 .weight-bold      { font-weight: 600; }
 
 .italic  { font-style: italic;}
+
+.text-light {color: #F4DB97}
+.dark-text  {color: #122143}
+
+.featured-text {   
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
 
 
 
@@ -265,9 +280,33 @@ footer a {
 }
 .bg-image-menu-flatlay {
     background-image: url(/images/the-cafe-project-6.jpg);
+    background-position: 50% 39%;
+    opacity: 90%;
 }
 .bg-image-food-item {
     background-image: url(/images/the-cafe-project-7.jpg);
+}
+.bg-image-pancake {
+    background-image: url(/images/the-cafe-project-8.jpg);
+}
+.bg-image-bowl {
+    background-image: url(/images/the-cafe-project20.jpg);
+}
+.bg-image-avo {
+    background-image: url(/images/the-cafe-project21.jpg);
+}
+.bg-image-drink {
+    background-image: url(/images/the-cafe-project22.jpg);
+}
+.bg-image-high-table {
+    background-image: url(/images/the-cafe-project-10.jpg);
+    background-position: 50% 68%;
+}
+.bg-image-coffee-machine {
+    background-image: url(/images/the-cafe-project-9.jpg);
+}
+.bg-image-garden {
+    background-image: url(/images/the-cafe-project-11.jpg);
 }
 
 /* ---------------Contact Form & Button Styles ------------------------------ */
