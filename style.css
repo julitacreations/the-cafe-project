@@ -140,7 +140,7 @@
 .bg-pos-b       { background-position: bottom; }
 .bg-pos-l       { background-position: left; }
 .bg-pos-r       { background-position: right; }
-.bg-pos-unique  { background-position: 50% 50%; }
+.bg-pos-unique  { background-position: 50% 68%; } 
 
 
 /* -------------------------- Typography Styles ---------------------------------------- */
@@ -300,7 +300,6 @@ footer a {
 }
 .bg-image-high-table {
     background-image: url(/images/the-cafe-project-10.jpg);
-    background-position: 50% 68%;
 }
 .bg-image-coffee-machine {
     background-image: url(/images/the-cafe-project-9.jpg);
