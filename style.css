@@ -205,6 +205,8 @@ a {
 
 .italic  { font-style: italic;}
 
+.text-sm { font-size: 0.8rem;}
+
 .text-light {color: #F4DB97}
 .dark-text  {color: #122143}
 
@@ -229,6 +231,10 @@ header a {
     border: none;
     color: inherit;
     padding: 0.5rem;
+}
+
+header a:hover {
+    color: #F4DB97;
 }
 
 
@@ -367,12 +373,24 @@ form button {
 
 .card {
     border: 2rem solid white;
+    border-radius: 5px;
   }
 
 
+/* ---------------Icon Features Block ----------------------------------------- */
+.fas{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+
 /* ---------------Testimonial Block ----------------------------------------- */
-
-
+.quote-icon {
+    color: #F4DB97;
+    font-size: 3.5rem;
+    display: inline-block;
+    line-height: 1;
+ }
 
 
 
@@ -389,24 +407,20 @@ form button {
 
 
 @media (max-width: 64em) {
-
-      /* Temporary visual hint for responsive editing, delete later */
-      body {
-        border: 2px solid yellow;
-    }
-
-
   .show-md { display: block; }
   .hide-md { display: none;  }
 
   .md-tall-60 { min-height: 60vh;}
 }
 
+
 /* ------- SM Media Query (48em / 768px) --------------- */ 
 /* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
 
-
 @media (max-width: 48em) {
+
+    html  { font-size: 14px; }
+
   .show-sm { display: block; }
   .hide-sm { display: none;  }
 	 
@@ -430,10 +444,16 @@ form button {
 
   .logo {font-size: 2rem;}
 
-  /* Temporary visual hint for responsive editing, delete later */
-  body {
-    border: 2px solid blue;
-}
+  .horizontal-scroll {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    }
+  .mob-padded-0 {
+    padding-left:0;
+    padding-right: 0;
+    }
 
 }
 
@@ -448,10 +468,10 @@ form button {
 
   .main-menu-button { padding: 0.5rem 3.5rem; }
 
-  /* Temporary visual hint for responsive editing, delete later */
-  body {
-    border: 2px solid green;
-}
+  .xs-text-center { text-align: center; }
+  .xs-padded-05 { padding: 0.5rem; }
+  .xs-padded-b-0 { padding-bottom: 0; }
+
 
 }
 

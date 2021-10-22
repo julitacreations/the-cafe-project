@@ -46,7 +46,7 @@
 
              <!--- Contact Heading Banner --->
 
-             <section class="bg-image bg-image-high-table tall-70">
+             <section class="bg-image bg-image-high-table tall-70 md-tall-60">
                 <div class="uppercase text-center padded-t-8">
                     <h2 class="featured-text"> Contact </h2>
                 </div>
@@ -56,9 +56,9 @@
         <!--- Location & Contact details --->
 
         <section class="grid padded">
-            <div class="bg-image bg-map col-8 tall-70 padded-1">
+            <div class="bg-image bg-map col-8_sm-12 tall-70 padded-1">
             </div>
-            <div class="col-4-middle padded">
+            <div class="col-4_sm-12-middle padded sm-text-center">
                 <h3> Our Location </h3>
                 <p> Phone: <a href="tel:#"> 048 123 1234 </a> </p>
                 <p> Email: <a href="mailto:#"> info@thecafeproject.com </a> </p>
@@ -66,7 +66,7 @@
             </div>
 
             <!-- Contact Form -->
-            <div class="col-8 bg-light padded">
+            <div class="col-8_xs-12 bg-light padded">
                 <h3 class="padded-b-1"> Any questions or enquiries? </h3>
                 <form>
                     <input type="text" name="_name" id="_name" placeholder="Name" />
@@ -79,16 +79,22 @@
                     
                   </form> 
             </div>
-            <div class="bg-image bg-cafe col-4 tall-70">
+            <div class="bg-image bg-cafe col-4 tall-70 hide-xs">
             </div>
         </section>
 
 
         <!--- Review / quote --->       
-        <section class="text-center padded bg-dark text-light">
-            <div>
-                <h2 class="padded-b-1 text-light"> Customer Love </h2>
-                <h4 class="about-intro"> "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta architecto consequatur suscipit rerum pariatur, quos nulla unde culpa magni est enim voluptas cumque dignissimos. Ad libero architecto facilis at. Maiores." </h4>
+        <section class="grid padded-lg bg-dark text-light">
+            <h2 class="col-12 text-center"> Customer Love </h2>
+            <div class="col-1 text-right"> 
+                <span class="quote-icon"> “ </span>
+            </div>
+            <div class="col-10">
+                <p class="about-intro padded-sm text-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta architecto consequatur suscipit rerum pariatur, quos nulla unde culpa magni est enim voluptas cumque dignissimos. Ad libero architecto facilis at. Maiores. </p>
+            </div>
+            <div class="col-1"> 
+                <span class="quote-icon"> ” </span>
             </div>
         </section>
 
@@ -98,23 +104,23 @@
 
          <!--- Footer details --->
          <footer class="grid-spaceAround">
-            <div class="logo col-6-middle padded-2"> 
+            <div class="logo col-6-middle padded-2 hide-sm"> 
                 <h2> The Café Project </h2>
             </div>
-            <nav class="col-2"> 
+            <nav class="col-2_xs-6 xs-text-center xs-padded-05"> 
                 <h4> The Café Project </h4>
                    <a href="#"> Lorem Ipsum </a>
                    <a href="#"> Commodi dolor </a>
                    <a href="#"> Lorem Ipsum </a>
             </nav>
-            <nav class="col-2"> 
+            <nav class="col-2_xs-6 xs-text-center xs-padded-05"> 
                 <h4> Contact </h4>
                    <a href="#"> Lorem Ipsum </a>
                    <a href="#"> Commodi dolor </a>
                    <a href="#"> Lorem Elit </a>
             </nav>
             <!-- Social links -->
-            <div class="col-2 social-links">
+            <div class="col-2_xs-12 xs-text-center xs-padded-05 xs-padded-b-0 social-links">
                 <h4> Socials </h4>
                 <nav> 
                     <a href="#"> 
@@ -125,6 +131,11 @@
                     </a>
                 </nav>
             </div>
+
+            <!--Copyright -->
+            <div class="col-12 text-center xs-padded-05 italic">
+                <p class="text-sm"> <br> © 2021 The Café Project </p>
+            </div> 
         </footer>
 
     </body>
