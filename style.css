@@ -455,8 +455,8 @@ form button {
     padding-right: 0;
     }
   
-    
-    [class*="grid-"][class*="-center"] {
+    /* This specific class overrides the original gridlex class of justify-content: center - with this class the scroll feature on mobile works the way it should from left to right, rather than from center to right*/
+  [class*="grid-"][class*="-center"] {
         justify-content: flex-start;
   }
 }
