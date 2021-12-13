@@ -75,6 +75,8 @@
 .margin-b { margin-bottom: 5%; }
 .margin-l { margin-left: 5%; }
 .margin-r { margin-right: 5%; }
+.margin-b-unique { margin-bottom: 2%;}
+
 
 .margin-t-1 { margin-top: 1rem; }
 .margin-b-1 { margin-bottom: 1rem; }
@@ -120,6 +122,7 @@
     background-repeat: no-repeat;
     background-position: 50% 55%;
 }
+
 
 
 /* Aspect Ratios with percentage unit are only effective if the element (the <div>) is inside a parent container or column, it can't be applied to the column itself. */
@@ -206,6 +209,10 @@ a {
 .italic  { font-style: italic;}
 
 .text-sm { font-size: 0.8rem;}
+.subtle { 
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
 
 .text-light {color: #F4DB97}
 .dark-text  {color: #122143}
@@ -287,7 +294,9 @@ footer a {
 .bg-image-menu-flatlay {
     background-image: url(/images/the-cafe-project-6.jpg);
     background-position: 50% 39%;
-    opacity: 90%;
+}
+.bg-image-menu-light {
+    background-image: url(/images/menu-light.png);
 }
 .bg-image-food-item {
     background-image: url(/images/the-cafe-project-7.jpg);
@@ -350,13 +359,13 @@ form textarea {
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 0.08rem;
-    border: 2px solid white;
+    border: 2px solid #122143;
     outline: none;
 }
 
 form input:focus,
 form textarea:focus {
-  border-color: #122143;
+  border-color: #F4DB97;
 }
 
 form button {
@@ -473,9 +482,12 @@ form button {
   .main-menu-button { padding: 0.5rem 3.5rem; }
 
   .xs-text-center { text-align: center; }
+  .xs-padded-1 { padding: 1rem; }
   .xs-padded-05 { padding: 0.5rem; }
   .xs-padded-b-0 { padding-bottom: 0; }
 
+  h4 {margin-bottom: 0;}
 
+  .flex-flip-sm { flex-direction: column-reverse; }
 }
 
