@@ -206,9 +206,11 @@ h2, h3 {
     font-size: 2.4rem;
 }
 
+
 p {
     font-size: 1.2rem;
     margin-bottom: 1rem;
+    margin-top: 1.1rem;
     line-height: 1.4;
 }
 h2,
@@ -401,6 +403,8 @@ form button {
 
 
 
+ 
+
 /* General CSS Responsive Styles (Apply everywhere unless overridden) */ 
 
 .show-xs, 
@@ -451,6 +455,9 @@ form button {
 
   .logo {font-size: 2rem;}
 
+  h2 { font-size: 1.9rem;}
+  p { font-size: 1.1rem;}
+
   .horizontal-scroll {
     overflow-x: auto;
     flex-wrap: nowrap;
@@ -466,6 +473,15 @@ form button {
   [class*="grid-"][class*="-center"] {
         justify-content: flex-start;
   }
+
+  .flex-flip-sm { flex-direction: column-reverse; }
+
+  .fas {
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
 }
 
 
@@ -473,19 +489,20 @@ form button {
 /* ------- XS Media Query (36em / 576px) --------------- */ 
 /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
 
+
 @media (max-width: 36em) {
   .show-xs { display: block; }
   .hide-xs { display: none;  }
 
   .main-menu-button { padding: 0.5rem 3.5rem; }
 
-  .xs-text-center { text-align: center; }
-  .xs-padded-1 { padding: 1rem; }
-  .xs-padded-05 { padding: 0.5rem; }
-  .xs-padded-b-0 { padding-bottom: 0; }
+  .xs-text-center   { text-align: center; }
+  .xs-padded-1      { padding: 1rem; }
+  .xs-padded-b-1    { padding-bottom: 1rem;}
+  .xs-padded-05     { padding: 0.5rem; }
+  .xs-padded-b-0    { padding-bottom: 0; }
 
   h4 {margin-bottom: 0;}
 
-  .flex-flip-sm { flex-direction: column-reverse; }
 }
 
