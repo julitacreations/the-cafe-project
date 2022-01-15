@@ -21,6 +21,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;600;700&display=swap" rel="stylesheet"> 
 
+        <!--- Animate on scroll  --->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
         <!--- This is our custom CSS stylesheet -This always goes last --->
         <link rel="stylesheet" href="/style.css">
 
@@ -48,7 +51,7 @@
             <h2> Our Story </h2>
         </div>
         <section class="padded">
-            <div class="grid">
+            <div class="grid" data-aos="fade-up">
                 <div class="bg-image bg-image-high-table col-6_sm-12 tall-70 bg-pos-unique md-tall-60">
                 </div>
                 <div class="col-6_sm-12 padded">
@@ -57,7 +60,7 @@
                 </div>
             </div>
 
-            <div class="flex-flip-sm grid">
+            <div class="flex-flip-sm grid" data-aos="fade-up">
                 <div class="col-6_sm-12 padded">
                     <h3> Our Values </h3>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium aperiam soluta excepturi, nesciunt error recusandae consequuntur, sapiente quas a, cum non aliquam facilis in minima magni voluptatibus beatae doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea reiciendis soluta saepe dolor maxime numquam corporis voluptatibus quasi debitis quae qui, atque cumque minima non quos culpa quibusdam doloribus dicta!</p>
@@ -66,8 +69,8 @@
                 </div>
             </div>
 
-            <div class="grid">
-                <div class="bg-image bg-image-garden col-6_sm-12 tall-70 md-tall-60">
+            <div class="grid" data-aos="fade-up">
+                <div class="bg-image bg-image-garden col-6_sm-12 tall-70 md-tall-60" >
                 </div>
                 <div class="col-6_sm-12 padded">
                     <h3> Our Impact </h3>
@@ -134,6 +137,21 @@
             </div> 
         </footer>
             
+
+         <!--------------------- Add jQuery -------------------->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+         <!--------------- Animate on Scroll ------------------->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+        <!-- Start of HubSpot Embed Code -->
+        <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/25206862.js"></script>
+        <!-- End of HubSpot Embed Code -->
+
+        <!-------------- custom javascript files -------------->
+        <script src="/scripts.js"></script> 
+
 
 
     </body>

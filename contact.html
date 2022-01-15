@@ -21,8 +21,11 @@
          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
          <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;600;700&display=swap" rel="stylesheet"> 
  
-         <!--- This is our custom CSS stylesheet -This always goes last --->
-         <link rel="stylesheet" href="/style.css">
+         <!--- Animate on scroll  --->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <!--- This is our custom CSS stylesheet -This always goes last --->
+        <link rel="stylesheet" href="/style.css">
 
     </head>
 
@@ -56,9 +59,9 @@
         <!--- Location & Contact details --->
 
         <section class="grid padded flex-flip-sm">
-            <div class="bg-image bg-map col-8_sm-12 tall-70 padded-1">
+            <div class="bg-image bg-map col-8_sm-12 tall-70 padded-1" data-aos="fade-up">
             </div>
-            <div class="col-4_sm-12-middle padded sm-text-center">
+            <div class="col-4_sm-12-middle padded sm-text-center" data-aos="fade-up">
                 <h3> Our Location </h3>
                 <p> Phone: <a href="tel:#"> 048 123 1234 </a> </p>
                 <p> Email: <a href="mailto:#"> info@thecafeproject.com </a> </p>
@@ -68,7 +71,7 @@
 
             <!-- Contact Form -->
         <section class="grid padded">
-            <div class="col-8_xs-12 padded">
+            <div class="col-8_xs-12 padded" data-aos="fade-up">
                 <h3 class="padded-b-1 xs-text-center"> Any questions or enquiries? </h3>
                 <form>
                     <input type="text" name="_name" id="_name" placeholder="Name" />
@@ -81,7 +84,7 @@
                     
                   </form> 
             </div>
-            <div class="bg-image bg-cafe col-4 tall-70 hide-xs">
+            <div class="bg-image bg-cafe col-4 tall-70 hide-xs" data-aos="fade-up">
             </div>
         </section>
 
@@ -140,5 +143,20 @@
             </div> 
         </footer>
          
+
+         <!--------------------- Add jQuery -------------------->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+         <!--------------- Animate on Scroll ------------------->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+        <!-- Start of HubSpot Embed Code -->
+        <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/25206862.js"></script>
+        <!-- End of HubSpot Embed Code -->
+
+        <!-------------- custom javascript files -------------->
+        <script src="/scripts.js"></script> 
+
     </body>
 </html>
