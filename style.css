@@ -300,6 +300,24 @@ header a:hover {
     font-size: 2.8rem;
 }
 
+
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 0.3rem 0;
+    margin: 0.1rem;
+    font-size: 1rem;
+}
+
+.social-links a {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 1.2rem 0rem;
+    margin: 0.2rem;
+}
+
 /*mobile menu styles ----*/
 
 .hamburger-button {
@@ -336,7 +354,6 @@ header a:hover {
 
 
 
-
 footer {
     padding: 2%;
     background-color: #F4DB97;
@@ -346,24 +363,6 @@ h4 {
     font-size: 1.3rem;
     margin-bottom: 1rem;
 }
-
-footer a {
-    color: inherit;
-    text-decoration: none;
-    display: block;
-    padding: 0.3rem 0;
-    margin: 0.1rem;
-    font-size: 1rem;
-}
-
-.social-links a {
-    display: inline-block;
-    font-size: 1.5rem;
-    padding: 1.2rem 0rem;
-    margin: 0.2rem;
-}
-
-
 
 
 /* ---------------Contact Form & Button Styles ------------------------------ */
