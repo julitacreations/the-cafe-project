@@ -126,15 +126,39 @@
 
 /* Background Position ----*/
 
-.gallery [class*="col-"] {
-    padding: 3%;
-  }
 
 .bg-pos-t       { background-position: top; }
 .bg-pos-b       { background-position: bottom; }
 .bg-pos-l       { background-position: left; }
 .bg-pos-r       { background-position: right; }
 .bg-pos-unique  { background-position: 50% 68%; } 
+
+
+/* Filterable Image gallery / navigation -----*/
+
+.filterable-gallery .bg-image {
+    padding-bottom: 100%;
+}
+.filterable-gallery {
+    padding: 1rem;
+}
+.filterable-gallery [class*="col-"] {
+    padding: 3%;
+}
+
+.hidden { display: none; }
+
+.portfolio-filter span:hover {
+    cursor: pointer;
+}
+.portfolio-filter .button {
+    text-align: center;
+    display: inline-block;
+}
+
+.portfolio-filter .active {
+    color: red;
+}
 
 
 /* --------------- Background Images------------------------------------------ */
@@ -188,6 +212,7 @@
 .bg-cafe {
     background-image: url(/images/the-cafe-project-12.jpg);
 }
+
 
 
 /* -------------------------- Typography Styles ---------------------------------------- */
