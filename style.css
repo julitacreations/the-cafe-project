@@ -134,7 +134,7 @@
 .bg-pos-unique  { background-position: 50% 68%; } 
 
 
-/* Filterable Image gallery / navigation -----*/
+/* Filterable Image gallery -----*/
 
 .filterable-gallery .bg-image {
     padding-bottom: 100%;
@@ -148,9 +148,16 @@
 
 .hidden { display: none; }
 
+/* Filterable Image navigation -----*/
+
+.portfolio-filter span {
+    text-transform: uppercase; 
+}
+
 .portfolio-filter span:hover {
     cursor: pointer;
 }
+
 .portfolio-filter .button {
     text-align: center;
     display: inline-block;

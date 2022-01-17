@@ -24,21 +24,22 @@ $( document ).ready(function() {
         infinite: true, // When true, means that it will scroll in a circle
         pauseOnHover: true, // When true means the autoplay pauses when hovering
         pauseOnDotsHover: true // Pauses the autoplay when hovering over the dots
-        
       });
 
 
       // Filterable Gallery
-      $('#food-filter span').click(function(){
+      $('#portfolio-filter span').click(function(){
     
         // Remove class 'active' from any <span> that is currently active 
-        $('#food-filter .active').removeClass('active');
+        $('#portolio-filter .active').removeClass('active');
         
         // give this <span> that was clicked on a class of 'active' 
         $(this).addClass('active');
     
         // get the name of the cateory from this <span>, remove up to two spaces from the text and replace them with dashes, and make it lowercase 
         var filterVal = $(this).text().replace(' ','-').replace(' ','-').toLowerCase();
+
+        console.log('filterVal has been set' + filterVal);
     
         // This is something new, it's an 'each' function which is basically iterates through each element that matches the selector and applies the function one by one.
         
@@ -66,3 +67,4 @@ $( document ).ready(function() {
     
 
 });
+
