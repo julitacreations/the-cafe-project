@@ -328,7 +328,7 @@ footer a {
     line-height: 1.3;
     position: relative;
     right: 0.5rem;
-    z-index: 1;
+    z-index: 5;
 }
 
 .mobile-menu {
@@ -338,6 +338,7 @@ footer a {
     left: 0;
     right: 0;
     text-align: center;
+    z-index: 1;
 }
 
 .mobile-menu a {
@@ -431,13 +432,57 @@ form button {
 
 /* ---------------Testimonial Block ----------------------------------------- */
 .quote-icon {
-    color: #F4DB97;
+    color: #f8eac2;
     font-size: 3.5rem;
     display: inline-block;
     line-height: 1;
  }
 
+ .author {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #f8eac2;
+    margin-top: 1.2rem;
+    text-align: center;
+  }
 
+  /* Slider---*/
+.testimonial-slider-container {
+    padding: 5%;
+    max-width: 900px;
+    margin: auto;
+}
+.slider-item {
+    padding: 0.9rem;
+    display: none;
+  }
+  
+  .slider-item:first-child {
+    display: block;
+  }
+  
+  /*DOTS--*/
+.slick-dots {
+    bottom: 12px;
+    left: 0; /* This align the dots perfectly to the center, do not delete */
+}
+
+.slick-dots li,
+.slick-dots li button {
+    width: 10px;
+}
+
+.slick-dots li button::before {
+color: #f8eac2;
+}
+
+.slick-dots li.slick-active button::before {
+    color: #F4DB97;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0px;
+  }
 
  
 

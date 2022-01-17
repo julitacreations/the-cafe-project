@@ -24,6 +24,12 @@
          <!--- Animate on scroll  --->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+        <!--- Main CSS that handles all the functionality Slick Slider --->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!--- Slick slider theme that handles the way everything slides. Optional but very helpful --->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
         <!--- This is our custom CSS stylesheet -This always goes last --->
         <link rel="stylesheet" href="/style.css">
 
@@ -31,20 +37,33 @@
 
     <body>
 
-         <!--- Header LOGO --->
-         <header class="grid padded-2">
-            <div class="col-5_sm-12-middle sm-padded-b-0 sm-text-center">
+        <!--- Header LOGO --->
+       <header class="grid padded-2">
+            <div class="col-5_sm-11-middle sm-padded-b-0">
                 <a href="/index.html">
                     <h1 class="logo"> The Café Project </h1>
                 </a>
             </div>
-            <nav class="col-7_sm-12-middle text-right padded-05 sm-text-center">
+            <nav class="col-7_sm-12-middle text-right mob-hide padded-05 sm-text-center">
                 <a href="/index.html"> Home </a>
                 <a href="/menu.html"> Menu </a>
                 <a href="/about.html"> About </a>
                 <a href="/contact.html"> Contact </a>
             </nav>
+            <div class="col-1"> 
+                <a class="hamburger-button mob-show right"> &#9776; </a>
+            </div>
         </header>
+
+        <!---Mobile menu hamburger button -->
+        <div class="mobile-menu bg-light padded"> 
+            <nav>
+                <a href="/index.html"> Home </a>
+                <a href="/menu.html"> Menu </a>
+                <a href="/about.html"> About </a>
+                <a href="/contact.html"> Contact </a>
+            </nav>
+        </div>
 
 
              <!--- Contact Heading Banner --->
@@ -96,7 +115,23 @@
                 <span class="quote-icon"> “ </span>
             </div>
             <div class="col-10">
-                <p class="about-intro padded-sm text-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta architecto consequatur suscipit rerum pariatur, quos nulla unde culpa magni est enim voluptas cumque dignissimos. Ad libero architecto facilis at. Maiores. </p>
+                <div class="testimonial-slider-container testimonial">
+                    <!------------Slide 1----------------->
+                    <div class="slider-item">
+                        <p class="about-intro padded-sm text-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta architecto consequatur suscipit rerum pariatur, quos nulla unde culpa magni est enim voluptas cumque dignissimos. Ad libero architecto facilis at. Maiores. </p>
+                        <h5 class="author">  - A Happy Guest </h5>
+                    </div>
+                     <!------------Slide 2----------------->
+                     <div class="slider-item">
+                        <p class="about-intro padded-sm text-center"> Quisquam quo odio voluptatem non enim quam recusandae atque voluptate quos est, reiciendis quibusdam. Blanditiis cumque consequatur vero sed iure aliquam incidunt. Soluta architecto consequatur suscipit rerum pariatur, quos nulla unde culpa magni est enim. </p>
+                        <h5 class="author">  - A Happy Customer </h5>
+                    </div>
+                     <!------------Slide 3----------------->
+                     <div class="slider-item">
+                        <p class="about-intro padded-sm text-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta architecto consequatur suscipit rerum pariatur, quos nulla unde culpa magni est. Doloribus numquam aliquam reiciendis fugiat ex cumque eaque. Commodi itaque debitis voluptate consectetur accusamus ratione. </p>
+                        <h5 class="author">  - Another delighted Visitor </h5>
+                    </div>
+                </div>
             </div>
             <div class="col-1"> 
                 <span class="quote-icon"> ” </span>
@@ -150,6 +185,8 @@
          <!--------------- Animate on Scroll ------------------->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+        <!--------------- Slick Slider ------------------->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
         <!-- Start of HubSpot Embed Code -->
         <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/25206862.js"></script>
