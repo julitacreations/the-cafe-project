@@ -12,20 +12,6 @@ $( document ).ready(function() {
         duration: 900, // values from 0 to 3000, with step 50ms
       });
 
-      // Slick-Slider animation
-      $('.testimonial-slider-container').slick({
-        autoplay: true, // Do we want it to autoplay? true or false
-        autoplaySpeed: 3000, // How long between each slide when auto-playing
-        speed: 500, // How fast is the transition in milliseconds
-        arrows: false, // Do you want to show arrows to trigger each slide
-        accessibility: true, // Enables keyboard tabbing and arrow key navigation
-        dots: true, // Enables the dots below to show how many slides
-        fade: false, // Changes the animate from slide to fade if true
-        infinite: true, // When true, means that it will scroll in a circle
-        pauseOnHover: true, // When true means the autoplay pauses when hovering
-        pauseOnDotsHover: true // Pauses the autoplay when hovering over the dots
-      });
-
 
       // Filterable Gallery
       $('#portfolio-filter span').click(function(){
@@ -39,7 +25,6 @@ $( document ).ready(function() {
         // get the name of the cateory from this <span>, remove up to two spaces from the text and replace them with dashes, and make it lowercase 
         var filterVal = $(this).text().replace(' ','-').replace(' ','-').toLowerCase();
 
-        console.log('filterVal has been set' + filterVal);
     
         // This is something new, it's an 'each' function which is basically iterates through each element that matches the selector and applies the function one by one.
         
@@ -49,7 +34,6 @@ $( document ).ready(function() {
     
             if (filterVal == 'all') {
               $(this).removeClass('hidden');
-              
             }
           
             // if it's not all, then 

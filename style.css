@@ -134,8 +134,9 @@
 .bg-pos-unique  { background-position: 50% 68%; } 
 
 
-/* Filterable Image gallery --------*/
+/* Filterable Image gallery styles--------*/
 
+/* this is the same as square image*/
 .filterable-gallery .bg-image {
     padding-bottom: 100%;
 }
@@ -145,8 +146,8 @@
 .filterable-gallery [class*="col-"] {
     padding: 3%;
 }
-
 .hidden { display: none; }
+
 
 /* Filterable Image navigation -----*/
 
