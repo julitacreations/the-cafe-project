@@ -17,7 +17,7 @@ $( document ).ready(function() {
       $('#portfolio-filter span').click(function(){
     
         // Remove class 'active' from any <span> that is currently active 
-        $('#portolio-filter .active').removeClass('active');
+        $('#portfolio-filter .active').removeClass('active');
         
         // give this <span> that was clicked on a class of 'active' 
         $(this).addClass('active');
