@@ -1,67 +1,11 @@
-<!DOCTYPE html>
-<html>
-
-    <!--- This is the head of html where we add external recourses and metadata --->
-    <head>
-
-        <!--- Viewport Meta for responsivness  --->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- This title shows up in the browser tab /SEO -->
-        <title> The Cafe Project </title>
-
-        <!--- Gridlex for flexbox girds --->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
-
-        <!--- Social Icon Links --->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-        <!--- Google Fonts --->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;600;700&display=swap" rel="stylesheet"> 
-
-        <!--- Animate on scroll  --->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-        <!--- This is our custom CSS stylesheet -This always goes last --->
-        <link rel="stylesheet" href="/style.css">
-
-    </head>
-
-    <body>
-       <!--- Header LOGO --->
-       <header class="grid padded-2">
-            <div class="col-5_sm-11-middle sm-padded-b-0">
-                <a href="/index.html">
-                    <h1 class="logo"> The Café Project </h1>
-                </a>
-            </div>
-            <nav class="col-7_sm-12-middle text-right mob-hide padded-05 sm-text-center">
-                <a href="/index.html"> Home </a>
-                <a href="/menu.html"> Menu </a>
-                <a href="/about.html"> About </a>
-                <a href="/contact.html"> Contact </a>
-            </nav>
-            <div class="col-1"> 
-                <a class="hamburger-button mob-show right"> &#9776; </a>
-            </div>
-        </header>
-
-        <!---Mobile menu hamburger button -->
-        <div class="mobile-menu bg-light padded"> 
-            <nav>
-                <a href="/index.html"> Home </a>
-                <a href="/menu.html"> Menu </a>
-                <a href="/about.html"> About </a>
-                <a href="/contact.html"> Contact </a>
-            </nav>
-        </div>
+---
+layout: default
+---
 
 
         <!--- About Section --->
         <div class="text-center featured-text bg-dark text-light padded">
-            <h2> Our Story </h2>
+            <h2 class="featured-text"> Our Story </h2>
         </div>
         <section class="padded">
             <div class="grid" data-aos="fade-up">
@@ -113,59 +57,4 @@
           
         </section>
 
-          <!--- Footer details --->
-        <footer class="grid-spaceAround padded padded-b-0">
-            <div class="logo col-6-middle hide-sm"> 
-                <h2> The Café Project </h2>
-            </div>
-            <nav class="col-2_xs-6 xs-text-center xs-padded-1"> 
-                <h4> The Café Project </h4>
-                   <a href="#"> Lorem Ipsum </a>
-                   <a href="#"> Commodi dolor </a>
-                   <a href="#"> Lorem Ipsum </a>
-            </nav>
-            <nav class="col-2_xs-6 xs-text-center xs-padded-1"> 
-                <h4> Contact </h4>
-                   <a href="#"> Lorem Ipsum </a>
-                   <a href="#"> Commodi dolor </a>
-                   <a href="#"> Lorem Elit </a>
-            </nav>
-            <!-- Social links -->
-            <div class="col-2_xs-12 xs-text-center xs-padded-05 xs-padded-b-0 social-links">
-                <h4> Socials </h4>
-                <nav> 
-                    <a href="#"> 
-                        <i class="fab fa-facebook"></i>         
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-instagram-square"></i>
-                    </a>
-                </nav>
-            </div>
-
-            <!--Copyright -->
-            <div class="col-12 text-center xs-padded-05 italic padded-2">
-                <p class="subtle"> © 2021 The Café Project </p>
-
-            </div> 
-        </footer>
-            
-
-         <!--------------------- Add jQuery -------------------->
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-         <!--------------- Animate on Scroll ------------------->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-
-        <!-- Start of HubSpot Embed Code -->
-        <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/25206862.js"></script>
-        <!-- End of HubSpot Embed Code -->
-
-        <!-------------- custom javascript files -------------->
-        <script src="/scripts.js"></script> 
-
-
-
-    </body>
-</html>
+        
