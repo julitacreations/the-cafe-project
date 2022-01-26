@@ -1,5 +1,25 @@
 ---
 layout: default
+menu: 
+ - description: Bliss Plate
+   food_image: /images/the-cafe-project-7.jpg
+ - description: Pancake Power
+   food_image: /images/the-cafe-project-8.jpg
+ - description: Energy Bowl
+   food_image: /images/the-cafe-project20.jpg
+ - description: Dragon Potion
+   food_image: /images/the-cafe-project22.jpg
+ - description: Brekkie Bowl
+   food_image: /images/the-cafe-project20.jpg
+ - description: Waffle Dream
+   food_image: /images/the-cafe-project-6.jpg
+ - description: Pancake Power
+   food_image: /images/the-cafe-project-8.jpg
+ - description: Ultimate Muffin
+   food_image: /images/the-cafe-project-7.jpg
+ - description: Bliss Drink
+   food_image: /images/the-cafe-project22.jpg
+
 ---
 
 
@@ -17,12 +37,6 @@ layout: default
         <section class="text-center padded">
             <h2 class="featured-text"> Our Menu </h2>
 
-            <!-- <nav class="padded-tb-2">
-                <a href ="#" class="button"> Food </a>
-                <a href ="#" class="button"> Sweets </a>
-                <a href ="#" class="button"> Drinks </a>
-            </nav> -->
-
             <div class="padded-tb-2 portfolio-filter" id="portfolio-filter">
                 <span class="button">ALL</span> 
                 <span class="button">Food 1</span> 
@@ -30,12 +44,18 @@ layout: default
                 <span class="button">Drink 3</span>
             </div>
 
+            
             <div class="grid-center filterable-gallery" id="filterable-gallery">
+
+                {% for item in page.menu %}
                 <div class="col-4_sm-6_xs-12 gallery-item food-1">
-                    <div class="bg-image bg-image-food-item margin-b-unique"></div>
-                    <span> Bliss Plate </span>
+                    <div class="bg-image bg-image-food-item margin-b-unique" style="background-image: url('{{item.food_image}}')"></div>
+                    <span> {{item.description}} </span>
                 </div>
-                <div class="col-4_sm-6_xs-12 gallery-item food-1">
+                {% endfor %}
+
+
+                <!--<div class="col-4_sm-6_xs-12 gallery-item food-1">
                     <div class="bg-image bg-image-pancake bg-pos-l margin-b-unique"> </div>
                     <span> Pancake Power </span>
                 </div>
@@ -66,7 +86,7 @@ layout: default
                 <div class="col-4_sm-6_xs-12 gallery-item drink-3">
                     <div class="bg-image bg-image-drink bg-pos-l margin-b-unique"></div>
                     <span> Bliss Drink </span>
-                </div>
+                </div> -->
             </div>
             <div>
                 <p> <em>For special dietary requirements, please ask your friendly waiter / waitress </em> </p>
