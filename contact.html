@@ -7,11 +7,11 @@ banner-height: tall-70
 
              <!--- Contact Heading Banner --->
 
-             <section class="bg-image {{page.banner-image-contact}} {{page.banner-height}} md-tall-60">
-                <div class="uppercase text-center padded-t-8">
-                    <h2 class="featured-text"> Contact </h2>
-                </div>
-            </section>
+        <section class="bg-image {{page.banner-image-contact}} {{page.banner-height}} md-tall-60">
+            <div class="uppercase text-center padded-t-8">
+                <h2 class="featured-text"> Contact </h2>
+            </div>
+        </section>
     
 
         <!--- Location & Contact details --->
@@ -47,35 +47,8 @@ banner-height: tall-70
         </section>
 
 
-        <!--- Review / quote --->       
-        <section class="grid padded-lg bg-dark text-light">
-            <h2 class="col-12 text-center"> Customer Love </h2>
-            <div class="col-1 text-right"> 
-                <span class="quote-icon"> “ </span>
-            </div>
-            <div class="col-10">
-                <div class="testimonial-slider-container testimonial">
-                    <!------------Slide 1----------------->
-                    <div class="slider-item">
-                        <p class="about-intro padded-sm text-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta architecto consequatur suscipit rerum pariatur, quos nulla unde culpa magni est enim voluptas cumque dignissimos. Ad libero architecto facilis at. Maiores. </p>
-                        <h5 class="author">  - A Happy Guest </h5>
-                    </div>
-                     <!------------Slide 2----------------->
-                     <div class="slider-item">
-                        <p class="about-intro padded-sm text-center"> Quisquam quo odio voluptatem non enim quam recusandae atque voluptate quos est, reiciendis quibusdam. Blanditiis cumque consequatur vero sed iure aliquam incidunt. Soluta architecto consequatur suscipit rerum pariatur, quos nulla unde culpa magni est enim. </p>
-                        <h5 class="author">  - A Happy Customer </h5>
-                    </div>
-                     <!------------Slide 3----------------->
-                     <div class="slider-item">
-                        <p class="about-intro padded-sm text-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta architecto consequatur suscipit rerum pariatur, quos nulla unde culpa magni est. Doloribus numquam aliquam reiciendis fugiat ex cumque eaque. Commodi itaque debitis voluptate consectetur accusamus ratione. </p>
-                        <h5 class="author">  - Another delighted Visitor </h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-1"> 
-                <span class="quote-icon"> ” </span>
-            </div>
-        </section>
+        <!--- Review / quote  --->       
+        {% include review.html %}
 
     
 
