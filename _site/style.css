@@ -14,6 +14,11 @@
     300;400;600
 */
 
+/* CSS Variables---------*/
+
+:root {
+    --primary-font: 'Inconsolata', monospace;
+}
 
 
 
@@ -240,7 +245,7 @@
 
 body {
     font-family: var(--primary-font);
-    color: var(--dark);;
+    color: var(--dark);
 }
 
 h2,h3,h4,h5,h6 {
