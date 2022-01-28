@@ -1,11 +1,21 @@
-/*  colors: 
+/* NOTES 
+
+    colors: 
     #F4DB97 light yellow    
     #122143 dark blue
+    .bg-light { background-color: #F4DB97 }
+    .bg-dark  { background-color: #122143; }
+    .text-light {color: #F4DB97}
+    .dark-text  {color: #122143}
+
 
     Fonts:
     font-family: 'Inconsolata', monospace;
     300;400;600
 */
+
+
+
 
 /* -------------Universal Reset--------------- */
 
@@ -100,14 +110,14 @@
 
 /* --------------- Background & Images ------------------------------------- */
 
-.bg-light { background-color: #F4DB97 }
-.bg-dark  { background-color: #122143; }
+.bg-light { background-color: var(--light); }
+.bg-dark  { background-color: var(--dark); }
 
 
 /* Image styles ----*/
 
 .bg-image {
-    background-color: #F4DB97;
+    background-color: var(--light);
     background-image: url(/images/the-cafe-project-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -228,8 +238,8 @@
 /* -------------------------- Typography Styles ---------------------------------------- */
 
 body {
-    font-family: 'Inconsolata', monospace;
-    color: #122143;
+    font-family: var(--primary-font);
+    color: var(--dark);;
 }
 
 h2,h3,h4,h5,h6 {
@@ -269,7 +279,7 @@ a {
 
 .button {
     text-decoration: none;
-    border: 2px solid #122143;
+    border: 2px solid var(--dark);
     border-radius: 0.5rem;
     color: inherit;
     letter-spacing: 0.1em;
@@ -278,8 +288,8 @@ a {
 }
 
 .button:hover {
-    background-color: #122143;
-    color: #F4DB97;
+    background-color: var(--dark);
+    color: var(--light);
 }
 
 
@@ -299,8 +309,8 @@ a {
     opacity: 0.7;
 }
 
-.text-light {color: #F4DB97}
-.dark-text  {color: #122143}
+.text-light {color: var(--light);}
+.dark-text  {color: var(--dark);}
 
 .featured-text {   
     font-size: 3rem;
@@ -326,7 +336,7 @@ header a {
 }
 
 header a:hover {
-    color: #F4DB97;
+    color: var(--light);
 }
 
 
@@ -385,14 +395,14 @@ footer a {
 }
 
 .hamburger-button.active {
-    color: #122143;
+    color: var(--dark);
   }
 
 
 
 footer {
     padding: 2%;
-    background-color: #F4DB97;
+    background-color: var(--light);
 }
 
 h4 {
@@ -406,19 +416,19 @@ h4 {
 .main-menu-button {
     text-decoration: none;
     font-size: 2rem;
-    border: 2px solid #122143;
+    border: 2px solid var(--dark);
     border-radius: 0.5rem;
     color: inherit;
-    background-color: #F4DB97;
+    background-color: var(--light);
     letter-spacing: 0.2em;
     padding: 0.5rem 5rem;
     transition: 0.3s;
 }
 
 .main-menu-button:hover {
-    border: 2px solid #F4DB97;
-    background-color: #122143;
-    color: #F4DB97;
+    border: 2px solid var(--light);
+    background-color: var(--dark);
+    color: var(--light);
 }
 
 form input, 
@@ -431,20 +441,20 @@ form textarea {
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 0.08rem;
-    border: 2px solid #122143;
+    border: 2px solid var(--dark);
     outline: none;
 }
 
 form input:focus,
 form textarea:focus {
-  border-color: #F4DB97;
+  border-color: var(--light);
 }
 
 form button {
     text-decoration: none;
-    border: 2px solid #122143;
-    color: #F4DB97;
-    background-color: #122143;
+    border: 2px solid var(--dark);
+    color: var(--light);
+    background-color: var(--dark);
     letter-spacing: 0.1em;
     padding: 0.5rem 2rem;
     appearance: none;
@@ -467,7 +477,7 @@ form button {
 
 /* ---------------Testimonial Block ----------------------------------------- */
 .quote-icon {
-    color: #f8eac2;
+    color: var(--light-subtle);
     font-size: 3.5rem;
     display: inline-block;
     line-height: 1;
@@ -476,7 +486,7 @@ form button {
  .author {
     font-style: italic;
     font-size: 0.9rem;
-    color: #f8eac2;
+    color: var(--light-subtle);
     margin-top: 1.2rem;
     text-align: center;
   }
@@ -490,11 +500,11 @@ form button {
 .slider-item {
     padding: 0.9rem;
     display: none;
-  }
+}
   
-  .slider-item:first-child {
+.slider-item:first-child {
     display: block;
-  }
+}
   
   /*DOTS--*/
 .slick-dots {
@@ -508,11 +518,11 @@ form button {
 }
 
 .slick-dots li button::before {
-color: #f8eac2;
+color: var(--light-subtle);
 }
 
 .slick-dots li.slick-active button::before {
-    color: #F4DB97;
+    color: var(--light);
 }
 
 .slick-dotted.slick-slider {
