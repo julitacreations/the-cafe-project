@@ -11,7 +11,7 @@ social:
   facebook_url: ""
   twitter_username: ""
 design:
-  dark_color: '#122143'
-  light_color: '#F4DB97'
+  dark_color: "#122143"
+  light_color: "#F4DB97"
   light-subtle_color: '#f8eac2'
   primary-font: 'Inconsolata, monospace'
