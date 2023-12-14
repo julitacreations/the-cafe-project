@@ -17,8 +17,6 @@ $( document ).ready(function() {
       });
       
 
-      // Add a console log to check if Slick is working
-  console.log("Slick Slider initialized!");
     
 
 });
