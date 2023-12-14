@@ -316,6 +316,9 @@ a {
     font-size: 0.8rem;
     opacity: 0.7;
 }
+.text-lowercase {
+    text-transform: none;
+}
 
 .text-light {color: var(--light);}
 .dark-text  {color: var(--dark);}
