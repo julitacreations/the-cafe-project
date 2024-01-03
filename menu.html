@@ -4,30 +4,39 @@ menu:
  - description: Bliss Plate
    column-size: col-4_sm-6_xs-12
    food_image: /images/the-cafe-project-7.jpg
+   category: "food"
  - description: Pancake Power House
    column-size: col-4_sm-6_xs-12
    food_image: /images/the-cafe-project-8.jpg
+   category: "food"
  - description: Energy Bowl
    column-size: col-4_sm-6_xs-12
    food_image: /images/the-cafe-project20.jpg
+   category: "food"
  - description: Dragon Potion
    column-size: col-4_sm-6_xs-12
    food_image: /images/the-cafe-project22.jpg
+   category: "sweet"
  - description: Brekkie Bowl
    column-size: col-4_sm-6_xs-12
    food_image: /images/the-cafe-project20.jpg
+   category: "food"
  - description: Waffle Dream
    column-size: col-4_sm-6_xs-12
    food_image: /images/the-cafe-project-6.jpg
+   category: "food"
  - description: Pancake Power
    column-size: col-4_sm-6_xs-12
    food_image: /images/the-cafe-project-8.jpg
+   category: "food"
  - description: Ultimate Muffin
    column-size: col-4_sm-6_xs-12
    food_image: /images/the-cafe-project-7.jpg
+   category: "sweet"
  - description: Bliss Drink
    column-size: col-4_sm-6_xs-12
    food_image: /images/the-cafe-project22.jpg
+   category: "drink"
 ---
 
 <!--- Menu Banner --->
@@ -46,16 +55,16 @@ menu:
 
             <div class="padded-tb-2 portfolio-filter" id="portfolio-filter">
                 <span class="button">ALL</span> 
-                <span class="button">Food 1</span> 
-                <span class="button">Sweet 2</span> 
-                <span class="button">Drink 3</span>
+                <span class="button">Food</span> 
+                <span class="button">Sweet</span> 
+                <span class="button">Drink</span>
             </div>
 
             
             <div class="grid-center filterable-gallery" id="filterable-gallery">
 
                 {% for item in page.menu %}
-                <div class="{{item.column-size}} gallery-item food-1">
+                <div class="{{item.column-size}} gallery-item {{item.category}}">
                     <div class="bg-image bg-image-food-item margin-b-unique" style="background-image: url('{{item.food_image}}')"></div>
                     <span> {{item.description}} </span>
                 </div>
