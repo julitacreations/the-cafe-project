@@ -578,8 +578,14 @@ color: var(--light-subtle);
   .hide-md { display: none;  }
 
   .md-tall-60 { min-height: 60vh;}
+  .md-tall-70 { min-height: 70vh;}
 
   .logo { font-size: 2.3rem; }
+
+  .bg-image-coffee-machine {
+    padding: 50%;
+}
+
 }
 
 
